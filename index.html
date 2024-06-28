@@ -4,287 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bananarama Studios</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #1b1b1b;
-            color: #fff; 
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-
-        header {
-            background-color: #ffcc33; 
-            padding: 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-            color: #1b1b1b; 
-        }
-
-        header p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-            color: #333; 
-        }
-
-        nav {
-            background-color: #1b1b1b;
-            text-align: center;
-            padding: 10px 0;
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 1.2rem;
-            transition: color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            color: #ffcc33;
-        }
-
-        .container {
-            width: 80%;
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #333;
-            border-radius: 8px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-            flex: 1;
-        }
-
-        .container h2 {
-            color: #ffcc33; 
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-            text-align: center;
-        }
-
-        .container p {
-            margin-bottom: 20px;
-            text-align: justify;
-            color: #fff;
-        }
-
-        .container .games {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            margin-top: 30px;
-        }
-
-        .container .game {
-            text-align: center;
-            padding: 20px;
-            border-radius: 8px;
-            background-color: #444; 
-            flex: 1 0 300px;
-            margin: 10px;
-            box-shadow: 0 0 10px rgba(255, 204, 51, 0.6);
-        }
-
-        .container .game h3 {
-            color: #ffcc33; 
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-
-            text-decoration: none;
-        }
-
-        .container .game p {
-            color: #ccc; 
-            font-size: 1.1rem;
-        }
-
-        .forums {
-            background-color: #1b1b1b; 
-            padding: 40px 0;
-            text-align: center;
-            color: #fff;
-        }
-
-        .forums h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        .forums {
-            background-color: #333; 
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(255, 204, 51, 0.6);
-
-            width: 50%;
-
-            margin: auto;
-        }
-
-        .forums p {
-            font-style: italic;
-            margin-top: 10px;
-            color: #fff; 
-        }
-
-        .forums img {
-            width: 200px;
-            height: 150px;
-
-            margin: 0px 15px 15px 0px;
-        }
-
-        .contact {
-            background-color: #ffcc33; 
-            text-align: center;
-            padding: 25px 0;
-            padding-top: 0px;
-            color: #1b1b1b;
-
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
-        }
-
-        .contact h2 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
-
-        .contact p {
-            font-size: 1.5rem;
-            margin-bottom: 30px;
-            padding-left: 10%;
-            width: 90%;
-
-            text-align: center;
-        }
-
-        .contact .button {
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: #1b1b1b; 
-            color: #ffcc33; 
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        .contact .button:hover {
-            background-color: #333; 
-            color: #fff; 
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background-color: #1b1b1b; 
-            color: #bdc3c7; 
-            width: 100%;
-        }
-
-        footer p {
-            font-size: 0.9rem;
-            margin: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="index_styles.css">
+    <script src="index_script.js" defer></script>
 </head>
 <body>
+    <header>
+        <div class="title">
+            <h1>Bananarama Studios</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#forums">Forums</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <h1>Bananarama Studios</h1>
-    <p>Indie Game Development</p>
-</header>
-
-<nav>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Games</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Testimonials</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
-
-<div class="container">
-    <section>
-        <h2>Bananarama Studios</h2>
-        <p style="text-align: center;">Bananarama Studios is an Indie GameDev Studio, all about bringing fun and free games.</p>
-    </section>
-
-    <br>
-
-    <section>
-        <h2>Latest Games</h2>
-        <div class="games">
-            <div class="game">
-                <h3><a href="google.com">Blight & Bloom</a></h3>
-                <p>An environment ripe for you to harvest, how big will your industry grow?</p>
+    <main>
+        <section id="home" class="section">
+            <div class="container">
+                <h2>Welcome to Bananarama Studios</h2>
+                <p>Your premier destination for exciting indie games!</p>
             </div>
-            <div class="game">
-                <h3><a href="google.com">Holder of Places</a></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat tempore autem maiores neque obcaecati ipsum praesentium delectus nobis, expedita alias eveniet nesciunt libero earum consequuntur repellat dignissimos reprehenderit deserunt. Esse.</p>
+        </section>
+
+        <section id="games" class="section">
+            <div class="container">
+                <h2>Our Games</h2>
+                <div class="slideshow-container">
+                    <div class="slides">
+                        <img src="game1.jpg" alt="Game 1">
+                        <div class="carousel-caption">Game 1</div>
+                    </div>
+                    <div class="slides">
+                        <img src="game2.jpg" alt="Game 2">
+                        <div class="carousel-caption">Game 2</div>
+                    </div>
+                    <div class="slides">
+                        <img src="game3.jpg" alt="Game 3">
+                        <div class="carousel-caption">Game 3</div>
+                    </div>
+                    <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+                    <button class="next" onclick="plusSlides(1)">&#10095;</button>
+                </div>
             </div>
-            <div class="game">
-                <h3><a href="google.com">Placing the Holders</a></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente at pariatur deserunt alias error, ex odit neque porro impedit corporis totam in deleniti vel natus consequatur nam sequi quaerat nulla!</p>
+        </section>
+
+        <section id="forums" class="section">
+            <div class="container">
+                <div class="flex-container">
+                    <div class="left-content">
+                        <h2>Forums</h2>
+                        <p>Explore discussions and topics in our forums.</p>
+                    </div>
+                    <div class="right-content">
+                        <div class="forums-content">
+                            <!-- Forum content goes here -->
+                            <div class="forum">
+                                <h3>Forum Topic 1</h3>
+                                <p>Description of the forum topic.</p>
+                            </div>
+                            <div class="forum">
+                                <h3>Forum Topic 2</h3>
+                                <p>Description of another forum topic.</p>
+                            </div>
+                            <!-- Add more forums as needed -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="community" class="section">
+            <div class="container">
+                <div class="flex-container">
+                    <div class="left-content">
+                        <h2>Community</h2>
+                        <p>Read the latest posts from our community.</p>
+                    </div>
+                    <div class="right-content">
+                        <div class="community-content">
+                            <!-- Community content goes here -->
+                            <div class="post">
+                                <h3>Community Post 1</h3>
+                                <p>Content of the community post.</p>
+                            </div>
+                            <div class="post">
+                                <h3>Community Post 2</h3>
+                                <p>Content of another community post.</p>
+                            </div>
+                            <!-- Add more community posts as needed -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <section id="contact" class="section contact-us">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-form">
+                <form id="contact-form">
+                    <label for="email">Email:</label>
+                    <select name="email" id="email">
+                        <option value="bananarama.development@gmail.com">Development</option>
+                        <option value="bananarama.support@gmail.com">Support</option>
+                        <option value="trendybanana.bananarama@gmail.com">General Inquiry</option>
+                    </select>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Enter your message here..."></textarea>
+                    <label for="attachments">Attachments:</label>
+                    <input type="file" id="attachments" name="attachments">
+                    <button type="submit">Send</button>
+                </form>
             </div>
         </div>
     </section>
 
-    <br>
-
-    <section class="forums">
-        <h2>Forums Posts</h2>
-        <div class="forums">
-            <p>"Anyone experiencing this issue in Blight & Bloom V. 0.1?"</p>
-            <img src="images/placeholder.png">
-            <p>- user353</p>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Bananarama Studios. All rights reserved.</p>
         </div>
-        <div class="forums">
-            <p>"My world in Blight & Bloom:"</p>
-            <img src="images/placeholder.png">
-            <p>- banan353</p>
-        </div>
-    </section>
-
-    <br>
-    
-    <section class="contact">
-        <h2>Get in Touch</h2>
-        <p>Need to reach out to our <b>Support Team</b>? Send us an email!</p>
-        <a href="#" class="button">Contact Us</a>
-    </section>
-</div>
-
-<footer>
-    <p>&copy; 2024 Bananarama Studios. All rights reserved.</p>
-</footer>
-
+    </footer>
 </body>
 </html>
